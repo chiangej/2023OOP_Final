@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0">
+    <div style="position: relative; height: 100vh;">
+        <div id="map" style="width: 100%; height: 100%;"></div>
+        <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
+        </div>
+    </div>
+
+    <body>
+
+    <script>
+
+        
+        let map;
+        let currentPosition;
+        var no;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 25.04876376388, lng: 121.53795898878},
+                zoom: 18,
+                streetViewControl: false,
+                mapTypeControl: false,
+                zoomControl : false,
+            });
+
+            fetch('battery.json')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    data.forEach(function(item) {
+                        var latt = parseFloat(item.lat);
+                        var lngg = parseFloat(item.lng);
+                        var marker = new google.maps.Marker({
+                            position: {lat: latt, lng: lngg},
+                            map: map,
+                            title: item.no 
+                        });
+
+                        google.maps.event.addListener(marker, 'click', function() {
+                            no=item.no;
+                            var infoWindow = new google.maps.InfoWindow();
+                            var content;
+                            content = '<div>充電站：' + item.no  + ' </div>';
+                            const a = no;
+                            
+                            
+
+                                
+                            infoWindow.setContent(content);
+                            infoWindow.open(map, marker);
+                        });
+                    });
+                });
+        }
+
+        
+    </script>
+
+
+
+
+<script>
+    
+</script>
+
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPc9Xvg02Nkxx4vEv7549MuhaXMQE6dbw&callback=initMap&v=weekly">
+    </script>
+</body>
+</html>
