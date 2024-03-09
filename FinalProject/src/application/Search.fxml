@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="420.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SwitchSceneController">
+  <tabs>
+    <Tab text="名稱搜尋">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="346.0">
+               <children>
+                  <TextField fx:id="txtRestaurant" layoutX="106.0" layoutY="109.0" prefHeight="35.0" prefWidth="208.0" />
+                  <Button layoutX="178.0" layoutY="186.0" mnemonicParsing="false" onAction="#switchToOrderFinal" prefHeight="35.0" prefWidth="63.0" text="search" />
+                  <Label fx:id="Error" layoutX="82.0" layoutY="47.0" prefHeight="50.0" prefWidth="317.0" text="請搜尋餐廳">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="類別搜尋">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="310.0" prefWidth="432.0">
+               <children>
+                  <Button fx:id="japanese" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#japanese" prefHeight="40.0" prefWidth="50.0" text="日式" />
+                  <Button fx:id="noodle" layoutX="25.0" layoutY="115.0" mnemonicParsing="false" onAction="#noodle" prefHeight="40.0" prefWidth="50.0" text="麵食" />
+                  <Button fx:id="snack" layoutX="25.0" layoutY="165.0" mnemonicParsing="false" onAction="#snack" prefHeight="40.0" prefWidth="50.0" text="小吃" />
+                  <Button fx:id="luchbox" layoutX="93.0" layoutY="15.0" mnemonicParsing="false" onAction="#luchbox" prefHeight="40.0" prefWidth="50.0" text="便當" />
+                  <Button fx:id="dessert" layoutX="25.0" layoutY="65.0" mnemonicParsing="false" onAction="#dessert" prefHeight="40.0" prefWidth="50.0" text="甜點" />
+                  <Button fx:id="drink" layoutX="94.0" layoutY="65.0" mnemonicParsing="false" onAction="#drink" prefHeight="40.0" prefWidth="50.0" text="飲料" />
+                  <Button fx:id="chinese" layoutX="94.0" layoutY="115.0" mnemonicParsing="false" onAction="#chinese" prefHeight="40.0" prefWidth="50.0" text="中式" />
+                  <Label fx:id="lblresttype" alignment="CENTER" layoutX="196.0" layoutY="14.0" prefHeight="218.0" prefWidth="210.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="txtTypeRest" layoutX="25.0" layoutY="245.0" prefHeight="31.0" prefWidth="190.0" />
+                  <Button layoutX="262.0" layoutY="249.0" mnemonicParsing="false" onAction="#switchToOrderFinalFromtype" prefHeight="23.0" prefWidth="78.0" text="search" />
+                  <Label fx:id="lbltypestate" layoutX="17.0" layoutY="210.0" prefHeight="28.0" prefWidth="185.0" textFill="RED" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="個人資訊">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane layoutX="70.0" layoutY="27.0" prefHeight="235.0" prefWidth="279.0">
+                     <content>
+                        <Label fx:id="userinfo" alignment="TOP_LEFT" onMouseClicked="#showUserInfo" prefHeight="342.0" prefWidth="554.0" text="點擊查看個人資訊">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="查看歷史訂單">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="304.0">
+               <children>
+                  <ScrollPane layoutX="29.0" layoutY="14.0" prefHeight="242.0" prefWidth="346.0">
+                     <content>
+                        <Label fx:id="userCheckHistory" alignment="TOP_CENTER" contentDisplay="TOP" onMouseClicked="#userCheckOrderHistory" prefHeight="20000.0" prefWidth="363.0" text="點擊查看歷史訂單">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="確認訂單狀態">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="userdeliverystate" alignment="CENTER" layoutX="60.0" layoutY="45.0" onMouseClicked="#userCheckOrderState" prefHeight="200.0" prefWidth="300.0" text="點擊查看配送狀態">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="登出">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="163.0" layoutY="121.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="48.0" prefWidth="94.0" style="-fx-background-radius: 6;" text="登出" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SwitchSceneController">
+   <children>
+      <Button layoutX="33.0" layoutY="102.0" mnemonicParsing="false" onAction="#switchToOwner" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: blue;" text="Owner" textFill="#e5ff00" />
+      <Button layoutX="210.0" layoutY="101.0" minWidth="45.0" mnemonicParsing="false" onAction="#switchToUser" prefHeight="0.0" prefWidth="54.0" style="-fx-background-color: blue;" text="User" textFill="#e5ff00">
+         <font>
+            <Font name="Microsoft JhengHei" size="12.0" />
+         </font></Button>
+      <Button layoutX="108.0" layoutY="102.0" mnemonicParsing="false" onAction="#switchToDelivery" style="-fx-background-color: blue;" text="Deliveryboy" textFill="#e5ff00" />
+      <Label layoutX="100.0" layoutY="28.0" text="428eat">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="90.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchToUserSignUp" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: purple;" text="User註冊請按這" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" underline="true">
+         <font>
+            <Font name="Microsoft JhengHei" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

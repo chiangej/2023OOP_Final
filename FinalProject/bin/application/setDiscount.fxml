@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Button layoutX="101.0" layoutY="181.0" mnemonicParsing="false" onAction="#setDiscount" text="確認" />
+      <Button layoutX="181.0" layoutY="181.0" mnemonicParsing="false" onAction="#switchToOwnerInterface" text="回到上一頁" />
+      <Label layoutX="67.0" layoutY="24.0" prefHeight="34.0" prefWidth="40.0" text="滿額">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="full" layoutX="43.0" layoutY="59.0" prefHeight="23.0" prefWidth="156.0" promptText="ex.1000" />
+      <Label layoutX="67.0" layoutY="89.0" prefHeight="34.0" prefWidth="40.0" text="折扣">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="discount" layoutX="43.0" layoutY="124.0" prefHeight="23.0" prefWidth="156.0" promptText="ex.100" />
+      <Label fx:id="lblsetdiscountstate" layoutX="141.0" layoutY="14.0" prefHeight="34.0" prefWidth="130.0" textFill="#00ef40">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

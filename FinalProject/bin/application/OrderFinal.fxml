@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderFinalController">
+   <children>
+      <ComboBox fx:id="cbboxOrder" layoutX="14.0" layoutY="44.0" prefHeight="39.0" prefWidth="174.0" promptText="菜名" />
+      <Button layoutX="206.0" layoutY="44.0" mnemonicParsing="false" onAction="#order" prefHeight="39.0" prefWidth="65.0" text="確認" />
+      <ComboBox fx:id="cbboxNumber" layoutX="14.0" layoutY="119.0" prefHeight="39.0" prefWidth="66.0" promptText="數量" />
+      <Button layoutX="293.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchToCheck" prefHeight="39.0" prefWidth="65.0" text="點餐完成" />
+      <Button layoutX="206.0" layoutY="119.0" mnemonicParsing="false" onAction="#switchToSearch" prefHeight="39.0" prefWidth="65.0" text="回上一頁" />
+      <Text fx:id="store" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="店名">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="16.0" layoutY="171.0" prefHeight="214.0" prefWidth="355.0">
+         <content>
+            <TextArea fx:id="result" prefHeight="1522.0" prefWidth="348.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="293.0" layoutY="119.0" mnemonicParsing="false" onAction="#info" prefHeight="39.0" prefWidth="66.0" text="店家資訊" />
+      <Button layoutX="122.0" layoutY="119.0" mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="66.0" text="reset" />
+   </children>
+</AnchorPane>
