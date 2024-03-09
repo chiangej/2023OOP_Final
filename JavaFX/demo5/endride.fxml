@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mysql3_fx.EndRide">
+   <children>
+      <Label fx:id="scooterid" layoutX="323.0" layoutY="57.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="timestart" layoutX="323.0" layoutY="101.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="timeend" layoutX="323.0" layoutY="132.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="time" layoutX="323.0" layoutY="172.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="distance" layoutX="323.0" layoutY="200.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="price" layoutX="323.0" layoutY="285.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="checkout" layoutX="252.0" layoutY="330.0" mnemonicParsing="false" onAction="#Checkout" style="-fx-background-color: transparent;" text="Checkout" textFill="#86233c">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="batteryshow" layoutX="323.0" layoutY="247.0" text="Label">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="scooterid1" layoutX="168.0" layoutY="57.0" text="Scooter Num">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timestart1" layoutX="187.0" layoutY="101.0" text="Time Start">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timestart11" layoutX="190.0" layoutY="132.0" text="Time End">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="time1" layoutX="193.0" layoutY="172.0" text="Duration">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="distance1" layoutX="195.0" layoutY="200.0" text="Distance">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="batteryshow1" layoutX="184.0" layoutY="247.0" text="Battery Left">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="price1" layoutX="209.0" layoutY="285.0" text="Price">
+         <font>
+            <Font name="Goudy Old Style Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="usecoupon" layoutX="399.0" layoutY="286.0" mnemonicParsing="false" onAction="#UseCoupon" text="coupon?" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mysql3_fx.FixingboyMenu">
+   <children>
+      <Button layoutX="171.0" layoutY="130.0" mnemonicParsing="false" onAction="#Fixscooter" prefHeight="30.0" prefWidth="258.0" style="-fx-background-color: #800020;" text="Fix Scooter" textFill="#f8eeee">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="185.0" mnemonicParsing="false" onAction="#Chargescooter" prefHeight="30.0" prefWidth="258.0" style="-fx-background-color: #800020;" text="Charging" textFill="#f5f0f0">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="272.0" layoutY="289.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="56.0" style="-fx-background-color: #C3CDE6;" text="Back">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

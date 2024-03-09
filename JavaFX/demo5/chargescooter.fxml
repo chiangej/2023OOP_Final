@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="359.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mysql3_fx.Chargescooter">
+   <children>
+      <Button fx:id="confirm" layoutX="226.0" layoutY="251.0" mnemonicParsing="false" onAction="#confirm" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #E6CFE6;" text="confirm" />
+      <Label layoutX="192.0" layoutY="76.0" text="Charge the scooter?">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font></Label>
+      <Label layoutX="168.0" layoutY="136.0" text="Scooter Num">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Label>
+      <Label layoutX="175.0" layoutY="189.0" text="Power Left">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Label>
+      <Label fx:id="scooterid" layoutX="366.0" layoutY="136.0" text="Label" textFill="#b22929">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Label>
+      <Label fx:id="powerleft" layoutX="366.0" layoutY="189.0" prefHeight="22.0" prefWidth="41.0" text="Label" textFill="#b22929">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

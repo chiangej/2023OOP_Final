@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Login" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mysql3_fx.Login">
+   <children>
+      <ImageView fitHeight="30.0" fitWidth="62.0" layoutX="277.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lock.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="Login_pass" layoutX="201.0" layoutY="182.0" onAction="#Login" prefHeight="49.0" prefWidth="199.0" promptText="password" />
+      <TextArea fx:id="Login_id" layoutX="200.0" layoutY="120.0" prefHeight="49.0" prefWidth="200.0" promptText="phone number" />
+      <Button fx:id="LoginBotton" layoutX="200.0" layoutY="249.0" mnemonicParsing="false" onAction="#Login" prefHeight="30.0" prefWidth="200.0" text="Log in">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font></Button>
+      <Button fx:id="signup" layoutX="295.0" layoutY="288.0" mnemonicParsing="false" onAction="#switchToUserSignup" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: transparent;" text="Sign up !" textFill="#34528d">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Button>
+      <Pane layoutX="14.0" prefHeight="400.0" prefWidth="18.0" style="-fx-background-color: #195884;" />
+      <Pane layoutX="568.0" prefHeight="400.0" prefWidth="18.0" style="-fx-background-color: #195884;" />
+      <Label layoutX="229.0" layoutY="293.0" prefHeight="20.0" prefWidth="108.0" text="Not a user?">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
